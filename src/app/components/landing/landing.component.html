@@ -26,7 +26,39 @@
     src="assets/vectors/ideation.svg"
     alt="Illustration 2"
   />
+  <img
+    class="landing__il--mobile--left"
+    src="assets/vectors/rings-d.svg"
+    alt="Illustration 5"
+  />
+  <img
+    class="landing__il--mobile--right"
+    src="assets/vectors/rings-c.svg"
+    alt="Illustration 6"
+  />
   <h1 class="landing__header">Ideathon</h1>
   <h2 class="landing__sub-heading">Ideate. Innovate. Incubate.</h2>
+  <h3 class="landing__subtext">ends in</h3>
+  <div class="landing__clock">
+    <div class="landing__clock__segment">
+      <div>{{ days }}</div>
+      <div class="landing__clock__segment__text">Days</div>
+    </div>
+    <div class="landing__clock__sep">:</div>
+    <div class="landing__clock__segment">
+      <div>{{ hours }}</div>
+      <div class="landing__clock__segment__text">Hours</div>
+    </div>
+    <div class="landing__clock__sep">:</div>
+    <div class="landing__clock__segment">
+      <div>{{ minutes }}</div>
+      <div class="landing__clock__segment__text">Minutes</div>
+    </div>
+    <div class="landing__clock__sep">:</div>
+    <div class="landing__clock__segment">
+      <div>{{ seconds }}</div>
+      <div class="landing__clock__segment__text">Seconds</div>
+    </div>
+  </div>
   <button class="landing__button">Submit Idea</button>
 </section>
