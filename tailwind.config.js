@@ -11,6 +11,7 @@ module.exports = {
     },
     extend: {
       width: {
+        160: "40rem",
         216: "54rem",
       },
       backgroundColor: {
