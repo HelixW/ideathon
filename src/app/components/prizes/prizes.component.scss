@@ -1,5 +1,5 @@
 .prizes {
-  @apply px-4 sm:px-32 min-h-screen flex flex-col justify-center items-end relative sm:text-right;
+  @apply px-4 sm:px-32 min-h-screen flex flex-col justify-center items-start sm:items-end relative sm:text-right;
 
   &__heading {
     @apply text-2xl sm:text-4xl font-bold;
@@ -15,11 +15,11 @@
 
   &__il {
     &--left {
-      @apply ml-32 absolute left-0;
+      @apply hidden lg:block ml-32 absolute left-0;
     }
 
     &--right {
-      @apply absolute right-0 hidden lg:block;
+      @apply absolute right-0;
     }
   }
 }
