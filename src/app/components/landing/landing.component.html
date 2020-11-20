@@ -41,22 +41,30 @@
   <h3 class="landing__subtext">ends in</h3>
   <div class="landing__clock">
     <div class="landing__clock__segment">
-      <div>{{ days }}</div>
+      <div *ngIf="days < 10; else moreDays">{{ "0" + days.toString() }}</div>
+      <ng-template #moreDays>{{ days }}</ng-template>
       <div class="landing__clock__segment__text">Days</div>
     </div>
     <div class="landing__clock__sep">:</div>
     <div class="landing__clock__segment">
-      <div>{{ hours }}</div>
+      <div *ngIf="hours < 10; else moreHours">{{ "0" + hours.toString() }}</div>
+      <ng-template #moreHours>{{ hours }}</ng-template>
       <div class="landing__clock__segment__text">Hours</div>
     </div>
     <div class="landing__clock__sep">:</div>
     <div class="landing__clock__segment">
-      <div>{{ minutes }}</div>
+      <div *ngIf="minutes < 10; else moreMinutes">
+        {{ "0" + minutes.toString() }}
+      </div>
+      <ng-template #moreMinutes>{{ minutes }}</ng-template>
       <div class="landing__clock__segment__text">Minutes</div>
     </div>
     <div class="landing__clock__sep">:</div>
     <div class="landing__clock__segment">
-      <div>{{ seconds }}</div>
+      <div *ngIf="seconds < 10; else moreSeconds">
+        {{ "0" + seconds.toString() }}
+      </div>
+      <ng-template #moreSeconds>{{ seconds }}</ng-template>
       <div class="landing__clock__segment__text">Seconds</div>
     </div>
   </div>
