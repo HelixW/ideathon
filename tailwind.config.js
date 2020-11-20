@@ -20,7 +20,7 @@ module.exports = {
       },
       textColor: {
         "idea-pink": "#EB5757",
-        "idea-gray": "#4F4F4F",
+        "idea-gray": "#808080",
       },
     },
   },

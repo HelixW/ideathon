@@ -60,12 +60,12 @@
       @apply flex flex-col justify-center items-center w-12 sm:w-20 lg:w-32;
 
       &__text {
-        @apply text-xs sm:text-sm lg:text-xl text-black text-center;
+        @apply text-xs sm:text-sm lg:text-base text-black text-center;
       }
     }
 
     &__sep {
-      @apply text-2xl xs:text-4xl sm:text-6xl text-idea-gray mx-2 xs:mx-5 lg:mx-10;
+      @apply text-2xl xs:text-4xl sm:text-6xl text-idea-gray mx-2 xs:mx-5 lg:mx-8;
     }
   }
 }

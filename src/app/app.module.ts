@@ -6,9 +6,10 @@ import { LandingComponent } from './components/landing/landing.component';
 import { AboutComponent } from './components/about/about.component';
 import { RulesComponent } from './components/rules/rules.component';
 import { PrizesComponent } from './components/prizes/prizes.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, AboutComponent, RulesComponent, PrizesComponent],
+  declarations: [AppComponent, LandingComponent, AboutComponent, RulesComponent, PrizesComponent, FaqComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
