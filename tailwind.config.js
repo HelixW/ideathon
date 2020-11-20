@@ -17,6 +17,7 @@ module.exports = {
       },
       backgroundColor: {
         "idea-blue": "#2D9CDB",
+        "idea-gray": "#2F2F2F",
       },
       textColor: {
         "idea-pink": "#EB5757",

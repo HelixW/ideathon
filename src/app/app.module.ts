@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { RulesComponent } from './components/rules/rules.component';
 import { PrizesComponent } from './components/prizes/prizes.component';
 import { SubmitComponent } from './components/submit/submit.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SubmitComponent } from './components/submit/submit.component';
     RulesComponent,
     PrizesComponent,
     SubmitComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule],
   providers: [],

@@ -1,0 +1,26 @@
+.footer {
+  @apply bg-idea-gray flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start text-white px-4 lg:px-32 pt-12 pb-6 mt-16;
+
+  &__col {
+    &__header {
+      @apply text-2xl font-bold text-center lg:text-left mt-4 lg:m-0;
+    }
+
+    &__item {
+      @apply flex justify-center lg:justify-start items-center my-4;
+
+      &__icon {
+        @apply mr-2;
+
+        &--fb {
+          @apply mr-2;
+          margin-left: 2px;
+        }
+      }
+    }
+
+    &--logo {
+      @apply flex flex-col justify-center items-center mt-8 lg:m-0;
+    }
+  }
+}
