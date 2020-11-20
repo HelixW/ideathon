@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ideathon-51424": {
+      "hosting": {
+        "ideathon": [
+          "ideathon-51424"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ideathon-51424"
+  }
+}

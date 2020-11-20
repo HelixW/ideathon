@@ -2,19 +2,21 @@
   @apply flex flex-col justify-around items-center h-screen;
 
   &__logo {
-    @apply flex justify-center items-center;
+    &__upper {
+      @apply flex justify-center items-center;
 
-    &__img {
-      @apply h-6 sm:h-auto;
+      &__img {
+        @apply h-6 sm:h-auto;
+      }
+
+      &__span {
+        @apply mx-5 font-semibold text-sm sm:text-lg;
+      }
     }
 
-    &__span {
-      @apply mx-5 font-semibold text-sm sm:text-lg;
+    &__below {
+      @apply text-xl font-semibold text-idea-gray text-center mt-8;
     }
-  }
-
-  &__sub-title {
-    @apply text-xl font-semibold text-idea-gray absolute top-0 mt-28 sm:mt-40;
   }
 
   &__il {
@@ -28,7 +30,7 @@
   }
 
   &__header {
-    @apply text-6xl sm:text-8xl font-bold text-idea-pink;
+    @apply text-6xl sm:text-8xl font-bold text-idea-pink sm:mt-20;
   }
 
   &__sub-heading {
@@ -36,6 +38,6 @@
   }
 
   &__button {
-    @apply py-3 px-8 bg-idea-blue rounded-lg text-xl font-bold text-white hover:bg-blue-500;
+    @apply py-3 px-8 bg-idea-blue rounded-lg text-xl font-bold text-white hover:bg-blue-500 mb-20 sm:m-0;
   }
 }

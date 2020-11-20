@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "target": "ideathon",
+    "public": "dist/ideathon",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
