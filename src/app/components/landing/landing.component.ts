@@ -8,9 +8,9 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
-  private _eventEndsAt;
-
+  private _eventEndsAt: string;
   private _diff: number;
+
   days: number;
   hours: number;
   minutes: number;
@@ -24,7 +24,7 @@ export class LandingComponent implements OnInit {
     this._eventEndsAt = '2020-11-28';
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     interval(1000)
       .pipe(
         map((_) => {
@@ -48,19 +48,19 @@ export class LandingComponent implements OnInit {
       });
   }
 
-  getDays(t) {
+  getDays(t: number): number {
     return Math.floor(t / (1000 * 60 * 60 * 24));
   }
 
-  getHours(t) {
+  getHours(t: number): number {
     return Math.floor((t / (1000 * 60 * 60)) % 24);
   }
 
-  getMinutes(t) {
+  getMinutes(t: number): number {
     return Math.floor((t / 1000 / 60) % 60);
   }
 
-  getSeconds(t) {
+  getSeconds(t: number): number {
     return Math.floor((t / 1000) % 60);
   }
 }
