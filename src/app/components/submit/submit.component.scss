@@ -1,0 +1,15 @@
+.submit {
+  @apply flex flex-col justify-center items-center px-4 sm:p-0;
+
+  &__heading {
+    @apply text-2xl sm:text-4xl font-bold;
+  }
+
+  &__sub-heading {
+    @apply text-xl lg:text-2xl font-bold text-idea-gray mb-5 sm:mb-12 mt-5 text-center;
+  }
+
+  &__button {
+    @apply py-3 px-8 bg-idea-blue rounded-lg text-xl font-bold text-white hover:bg-blue-500 mb-20 sm:m-0 z-10;
+  }
+}
