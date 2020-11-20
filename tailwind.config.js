@@ -9,15 +9,18 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
-    backgroundColor: (theme) => ({
-      ...theme("colors"),
-      "idea-blue": "#2D9CDB",
-    }),
-    textColor: (theme) => ({
-      ...theme("colors"),
-      "idea-pink": "#EB5757",
-      "idea-gray": "#4F4F4F",
-    }),
+    extend: {
+      width: {
+        216: "54rem",
+      },
+      backgroundColor: {
+        "idea-blue": "#2D9CDB",
+      },
+      textColor: {
+        "idea-pink": "#EB5757",
+        "idea-gray": "#4F4F4F",
+      },
+    },
   },
   variants: {
     extend: {},
