@@ -1,0 +1,25 @@
+.prizes {
+  @apply px-4 sm:px-32 min-h-screen flex flex-col justify-center items-end relative sm:text-right;
+
+  &__heading {
+    @apply text-2xl sm:text-4xl font-bold;
+  }
+
+  &__sub-heading {
+    @apply text-xl lg:text-2xl font-bold text-idea-gray mb-5 sm:mb-12 mt-5;
+  }
+
+  &__item {
+    @apply my-4 lg:font-semibold;
+  }
+
+  &__il {
+    &--left {
+      @apply ml-32 absolute left-0;
+    }
+
+    &--right {
+      @apply absolute right-0 hidden lg:block;
+    }
+  }
+}
