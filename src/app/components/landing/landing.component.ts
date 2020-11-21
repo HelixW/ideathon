@@ -21,7 +21,8 @@ export class LandingComponent implements OnInit {
     this.hours = 0;
     this.minutes = 0;
     this.seconds = 0;
-    this._eventEndsAt = '2020-11-28';
+    this._eventEndsAt =
+      'Sat Nov 28 2020 00:00:00 GMT+0530 (India Standard Time)';
   }
 
   ngOnInit(): void {
